@@ -22,7 +22,7 @@ The Kenyan housing market is shaped by numerous factors. Among these factors, si
 
 ## **Problem Statement**
 
-The location and size of properties are two of the several factors influencing the housing market in Kenya. Knowing how these factors relate to property prices becomes essential as investors, homeowners, and policymakers attempt to navigate this complex landscape. Through the use of exploratory data analysis (EDA) on a large dataset, the study seeks to close this gap. 
+The location and size of properties are two of the several factors influencing the housing market in Kenya. Knowing how these factors relate to property prices becomes essential as investors, homeowners, and policymakers attempt to navigate this complex landscape. Through exploratory data analysis (EDA), this study seeks to close this gap. 
 
 ## **Skills Demonstrated**
 
@@ -50,9 +50,9 @@ The dataset used for this analysis is sourced from [Kaggle](https://www.kaggle.c
 
 During the data cleaning process, several essential activities were performed to prepare the dataset for analysis. Here’s an overview of the steps taken:
 
-1. **Loading the Data:** The dataset was loaded into a Pandas DataFrame from a CSV file using the `pd.read_csv()` function.
-2. **Initial Inspection:** We examined the first few rows of the DataFrame using `housing_dataframe.head()` and checked the data types and missing values with `housing_dataframe.info()`.
-3. **Handling Null Values:** Null values were observed in the dataset. To address this, I dropped rows containing null values using `housing_dataframe.dropna(inplace=True)`.
+1. **Loading the Data:** The dataset was loaded into a Pandas DataFrame from a CSV file using the ```pd.read_csv()``` function.
+2. **Initial Inspection:** I examined the first few rows of the DataFrame using ```housing_dataframe.head()``` and checked the data types and missing values with ```housing_dataframe.info()```.
+3. **Handling Null Values:** Null values were observed in the dataset. To address this, I dropped rows containing null values using ```housing_dataframe.dropna(inplace=True)```.
 4. **Column Modifications:**
   - **Dropping Columns:** I removed the `Link` and `Agency` columns as they were not relevant to the analysis.
   - **Creating a New Column:** A new column named `Estate` was created from the `Neighborhood` column to provide insights into the geographical context.
@@ -61,7 +61,7 @@ During the data cleaning process, several essential activities were performed to
 
 ## **Exploratory Data Analysis**
 
-In the Exploratory Data Analysis section, we embark on a comprehensive exploration of the housing dataset. Here, we delve into descriptive statistics, uncovering key insights into the distribution and relationships among variables such as house prices, size, and location. Through visually informative plots and statistical analyses, we aim to gain a deeper understanding of the underlying patterns and trends within the data.
+In the Exploratory Data Analysis section, I embark on a comprehensive exploration of the housing dataset. Here, I delve into descriptive statistics, uncovering key insights into the distribution and relationships among variables such as house prices, size, and location. Through visually informative plots and statistical analyses, I aim to gain a deeper understanding of the underlying patterns and trends within the data.
 
 **Key Questions Addressed:**
 
@@ -72,7 +72,7 @@ In the Exploratory Data Analysis section, we embark on a comprehensive explorati
 
 **Descriptive Statistics**
 
-We start by computing descriptive statistics for numerical values such as house prices, bedrooms, and bathrooms, providing a foundational understanding of the dataset's characteristics.
+I started by computing descriptive statistics for numerical values such as house prices, bedrooms, and bathrooms, providing a foundational understanding of the dataset's characteristics.
 
 |          |Price_Ksh|Bedrooms|Bathrooms|
 |----------|---------|--------|----------|
@@ -87,7 +87,7 @@ We start by computing descriptive statistics for numerical values such as house 
 
 **Distribution of Key Variables**
 
-We visualize the distribution of house prices, bedrooms, and bathrooms using box plots, revealing insights into the spread and central tendencies of these variables. Notably, the data suggests a prevalence of relatively high-priced properties and a trend towards larger, more spacious accommodations.
+Visualizing the distribution of house prices, bedrooms, and bathrooms using box plots, revealing insights into the spread and central tendencies of these variables. Notably, the data suggests a prevalence of relatively high-priced properties and a trend towards larger, more spacious accommodations.
 
 ![distribution of key variables](https://github.com/Michael-Nyawade/housing_in_kenya/assets/157029652/417b13a7-303a-492f-9e7d-4cea52b90a76)
 
